@@ -1,0 +1,9 @@
+*.pyc
+*.o
+*.hex
+*.map
+*.lss
+*.eep
+*.elf
+/Debug
+/.vs
