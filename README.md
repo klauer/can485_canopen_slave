@@ -27,6 +27,15 @@ Connections
 Standard output (stdout) and standard error (stderr) can be used directly with
 the Arduino FTDI serial port monitor at 9600 baud.
 
+A 120 ohm resistor should be connected between CANL and CANH, as noted in the 
+hookup guide.  For connecting to a Beckhoff EL6751 / Dsub9 CANopen master:
+
+| AST-CAN485    | EL6751 DB9    |
+|:-------------:|:-------------:|
+| CANLO         | Pin 2         |
+| CANHI         | Pin 7         |
+| GND           | Pin 3 / Pin 6 |
+
 Object Dictionary
 -----------------
 
@@ -78,7 +87,7 @@ $ pythonw objdictedit.py ../../ObjDict.od
 
 Links
 -----
-[canfestival-3-asc repository](https://bitbucket.org/Mongo/canfestival-3-asc)
-[AST-CAN485 product page](https://www.sparkfun.com/products/14483)
-[AST-CAN485 schematic](https://cdn.sparkfun.com/assets/2/8/3/4/7/SparkFun_AST-CAN485.pdf)
-[AST-CAN485 hookup guide](https://learn.sparkfun.com/tutorials/ast-can485-hookup-guide/)
+* [canfestival-3-asc repository](https://bitbucket.org/Mongo/canfestival-3-asc)
+* [AST-CAN485 product page](https://www.sparkfun.com/products/14483)
+* [AST-CAN485 schematic](https://cdn.sparkfun.com/assets/2/8/3/4/7/SparkFun_AST-CAN485.pdf)
+* [AST-CAN485 hookup guide](https://learn.sparkfun.com/tutorials/ast-can485-hookup-guide/)
